@@ -246,13 +246,6 @@ function doubleArray(arr) {
  *    toStringList(['rock', 'paper', 'scissors']) => 'rock,paper,scissors'
  */
 function toStringList(arr) {
-  // return arr.reduce((accum, item, index) => {
-  //   if (index !== arr.length - 1) {
-  //     const comma = ',';
-  //     return accum + item + comma;
-  //   }
-  //   return accum + item;
-  // }, '');
   return arr.join(',');
 }
 
@@ -268,8 +261,8 @@ function toStringList(arr) {
  *   distinct([ 1, 1, 2, 2, 3, 3, 4, 4]) => [ 1, 2, 3, 4]
  *   distinct([]) => []
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
+function distinct(arr) {
+  return Array.from(new Set(arr));
 }
 
 /**
