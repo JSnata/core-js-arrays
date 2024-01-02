@@ -245,8 +245,15 @@ function doubleArray(arr) {
  *    toStringList([1, 2, 3, 4, 5]) => '1,2,3,4,5'
  *    toStringList(['rock', 'paper', 'scissors']) => 'rock,paper,scissors'
  */
-function toStringList(/* arr */) {
-  throw new Error('Not implemented');
+function toStringList(arr) {
+  // return arr.reduce((accum, item, index) => {
+  //   if (index !== arr.length - 1) {
+  //     const comma = ',';
+  //     return accum + item + comma;
+  //   }
+  //   return accum + item;
+  // }, '');
+  return arr.join(',');
 }
 
 /**
